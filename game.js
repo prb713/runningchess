@@ -10,7 +10,7 @@ let jumpSpeed = 0;
 
 const dino = {
     x: 50,
-    y: canvas.height - 150,
+    y: canvas.height - 200,
     width: 50,
     height: 50,
     draw() {
