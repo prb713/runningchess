@@ -8,9 +8,11 @@ let isJumping = false;
 let jumpHeight = 0;
 let jumpSpeed = 0;
 
+const groundY = canvas.height - 100;  // 공룡과 장애물이 서 있는 지면의 y좌표
+
 const dino = {
     x: 50,
-    y: canvas.height - 200,
+    y: groundY,
     width: 50,
     height: 50,
     draw() {
@@ -21,7 +23,7 @@ const dino = {
 
 const obstacle = {
     x: canvas.width,
-    y: canvas.height - 50,
+    y: groundY,
     width: 50,
     height: 50,
     speed: 10,
